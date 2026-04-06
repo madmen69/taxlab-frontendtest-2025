@@ -1,0 +1,22 @@
+[
+  {
+    "bandStart": 0.0,
+    "bandEnd": 14000.0,
+    "taxRate": 0.115
+  },
+  {
+    "bandStart": 14000.0,
+    "bandEnd": 48000.0,
+    "taxRate": 0.21
+  },
+  {
+    "bandStart": 48000.0,
+    "bandEnd": 70000.0,
+    "taxRate": 0.315
+  },
+  {
+    "bandStart": 70000.0,
+    "bandEnd": null,
+    "taxRate": 0.355
+  }
+]
