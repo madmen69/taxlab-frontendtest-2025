@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { formatNZD } from '@/features/tax-calculator/lib/taxCalculator';
 import { taxCalculatorInputSchema } from '@/features/tax-calculator/schemas/taxCalculatorSchema';
-import { useTaxCalculator } from '@/context/taxCalculator/TaxCalculatorContext';
+import { useTaxCalculator } from '@/context/tax-calculator/TaxCalculatorContext';
 
 export function TaxCalculatorForm({
   isBandsLoading,
