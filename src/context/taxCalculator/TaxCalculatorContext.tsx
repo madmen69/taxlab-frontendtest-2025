@@ -10,11 +10,6 @@ export interface TaxCalculatorContextValue {
 
 export const TaxCalculatorContext = createContext<TaxCalculatorContextValue | null>(null);
 
-export interface TaxCalculatorProviderProps {
-  bands: IncomeTaxBand[];
-  children: ReactNode;
-}
-
 export function useTaxCalculator() {
   const ctx = useContext(TaxCalculatorContext);
   if (!ctx) {

@@ -1,9 +1,14 @@
+import { useCallback, useMemo, useState, type ReactNode } from 'react';
 import {
   TaxCalculatorContext,
   type TaxCalculatorContextValue,
-  type TaxCalculatorProviderProps,
 } from '@/context/taxCalculator/TaxCalculatorContext';
-import { useCallback, useMemo, useState } from 'react';
+import type { IncomeTaxBand } from '../../typings';
+
+export interface TaxCalculatorProviderProps {
+  bands: IncomeTaxBand[];
+  children: ReactNode;
+}
 
 export function TaxCalculatorProvider({ bands, children }: TaxCalculatorProviderProps) {
   const [salary, setSalaryState] = useState(0);
