@@ -4,7 +4,7 @@ import { screen } from '@testing-library/react';
 
 import { TaxCalculator } from '@/features/tax-calculator/components/TaxCalculator/TaxCalculator';
 import { formatNZD } from '@/features/tax-calculator/lib/taxCalculator';
-import { render } from '@/test/utils';
+import { render } from '@/test/render';
 
 let mockBandsQuery: {
   data: Array<{ bandStart: number; bandEnd: number | null; taxRate: number }> | undefined;

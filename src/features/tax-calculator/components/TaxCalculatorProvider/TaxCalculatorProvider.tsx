@@ -2,7 +2,7 @@ import { useCallback, useMemo, useState, type ReactNode } from 'react';
 import {
   TaxCalculatorContext,
   type TaxCalculatorContextValue,
-} from '@/context/tax-calculator/TaxCalculatorContext';
+} from '@/features/tax-calculator/context/TaxCalculatorContext';
 import type { IncomeTaxBand } from '../../typings';
 
 export interface TaxCalculatorProviderProps {

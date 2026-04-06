@@ -1,6 +1,6 @@
 import { TaxBreakdown } from '@/features/tax-calculator/components/TaxBreakdown/TaxBreakdown';
 import { calculateTaxEstimate } from '@/features/tax-calculator/lib/taxCalculator';
-import { useTaxCalculator } from '@/context/tax-calculator/TaxCalculatorContext';
+import { useTaxCalculator } from '@/features/tax-calculator/context/TaxCalculatorContext';
 
 export function TaxCalculatorResults() {
   const { salary, bands } = useTaxCalculator();
