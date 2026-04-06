@@ -22,6 +22,10 @@ export function TaxCalculatorForm({
 
   const disabled = isBandsLoading || isBandsError;
 
+  const handleIncomeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIncomeInput(e.target.value)
+  }
+
   return (
     <CardContent className="p-6 pt-0">
       <form
@@ -48,7 +52,7 @@ export function TaxCalculatorForm({
             id="income"
             inputMode="numeric"
             value={incomeInput}
-            onChange={(e) => setIncomeInput(e.target.value)}
+            onChange={handleIncomeChange}
             aria-invalid={formError ? true : undefined}
             aria-describedby={formError ? 'error-message' : undefined}
             disabled={disabled}
