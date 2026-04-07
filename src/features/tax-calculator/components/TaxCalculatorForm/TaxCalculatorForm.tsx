@@ -87,8 +87,8 @@ export function TaxCalculatorForm({
           </div>
         ) : null}
 
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <Button type="submit" variant="outline" disabled={disabled}>
+        <div>
+          <Button type="submit" variant="outline" disabled={disabled} size='lg'>
             {isBandsLoading ? 'Loading bands…' : 'Calculate'}
           </Button>
         </div>

@@ -15,13 +15,8 @@ export function TaxCalculator() {
       <div className="grid gap-5">
         <Card className="animate-fadeInUp">
           <CardHeader className="p-6 pb-4">
-            <div className="flex items-start justify-between gap-6">
-              <div>
-                <h2 className="text-lg font-semibold text-text">Tax estimator</h2>
-              </div>
-            </div>
+              <h2 className="text-lg font-semibold text-text">Tax estimator</h2>
           </CardHeader>
-
           <TaxCalculatorForm isBandsLoading={isLoading} isBandsError={isError} />
         </Card>
 

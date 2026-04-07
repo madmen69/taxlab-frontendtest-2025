@@ -12,7 +12,7 @@ const buttonVariants = cva(
           'bg-primary text-white shadow-[0_10px_30px_rgba(124,58,237,0.35)] hover:brightness-105 active:scale-[0.99] dark:text-slate-950',
         secondary: 'bg-primary/10 text-text hover:bg-primary/15',
         ghost: 'bg-transparent text-muted hover:bg-primary/10',
-        outline: 'border border-border bg-transparent text-text hover:bg-white/5',
+        outline: 'border border-border bg-transparent text-text hover:bg-primary cursor-pointer',
         destructive: 'bg-red-600 text-white hover:brightness-110',
       },
       size: {
